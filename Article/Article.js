@@ -127,6 +127,7 @@ const createArticle = (obj) => {
   p1.textContent = obj.firstParagraph;
   p2.textContent = obj.secondParagraph;
   p3.textContent = obj.thirdParagraph;
+  expandButton.textContent = '\u25bc';
 
   expandButton.addEventListener('click', () => {
     article.classList.toggle('article-open');
@@ -135,13 +136,16 @@ const createArticle = (obj) => {
   return article;
 }
 
-/*
-  Step 4: Map over the data, creating a component for each oject and add each component to the DOM as children of the 'articles' div.
-*/
+/* Step 4: Map over the data, creating a component for each oject and add each component to the DOM as children of the 'articles' div. */
 const articles = document.querySelector('.articles');
 data.forEach(article => articles.appendChild(createArticle(article)));
 
-/*
-  Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
+/* Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article. */
 
-*/
+articles.appendChild(createArticle({
+  title: "It's the End of the World as We Know It",
+  date: 'March 16, 2020',
+  firstParagraph: "That's great, it starts with an earthquake, birds and snakes, an aeroplane; Lenny Bruce is not afraid.",
+  secondParagraph: "Eye of a hurricane, listen to yourself churn, world serves its own needs, don't misserve your own needs. Speed it up a notch, speed, grunt, no strength. The ladder starts to clatter with fear of height, down height. Wire in a fire, represent the seven games in a government for hire and a combat site. Left her, wasn't coming in a hurry with the furies breathing down your neck.",
+  thirdParagraph: "Team by team reporters baffled, trump, tethered crop. Look at that low plane! Fine, then. Uh oh, overflow, population, common food, but it'll do. Save yourself, serve yourself. World serves its own needs, listen to your heart bleed. Tell me with the rapture and the reverent in the right, right. You vitriolic, patriotic, slam, fight, bright light; Feeling pretty psyched."
+}));
