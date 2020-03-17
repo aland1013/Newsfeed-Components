@@ -42,9 +42,22 @@ const createMenu = (array) => {
   menu.classList.add('menu');
 
   const menuButton = document.querySelector('.menu-button');
+  let pushed = false;
 
   menuButton.addEventListener('click', () => {
-    menu.classList.toggle('menu--open');
+    if (!pushed) {
+      gsap.to('.menu', {
+        duration: 1,
+        left: 0
+      });
+      pushed = true;
+    } else {
+      gsap.to('.menu', {
+        duration: 1,
+        left: '-350px'
+      });
+      pushed = false;
+    }
   });
 
   return menu;
