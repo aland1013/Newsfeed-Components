@@ -44,25 +44,44 @@ const createMenu = (array) => {
   const menuButton = document.querySelector('.menu-button');
   let pushed = false;
 
-  menuButton.addEventListener('click', () => {
+  menuButton.addEventListener('click', (event) => {
+    event.stopPropagation();
     if (!pushed) {
-      gsap.to('.menu', {
-        duration: 1,
-        left: 0
-      });
+      showMenu();
       pushed = true;
     } else {
-      gsap.to('.menu', {
-        duration: 1,
-        left: '-350px'
-      });
+      hideMenu();
       pushed = false;
     }
   });
 
+  menu.addEventListener('click', (event) => {
+    event.stopPropagation();
+  });
+
+  window.addEventListener('click', () => {
+    if (pushed) {
+      hideMenu();
+      pushed = false;
+    }
+  })
+
   return menu;
 }
 
+const showMenu = () => {
+  gsap.to('.menu', {
+    duration: 1,
+    left: 0
+  });
+}
+
+const hideMenu = () => {
+  gsap.to('.menu', {
+    duration: 1,
+    left: '-350px'
+  });
+}
 
 /* Step 6: add the menu component to the DOM. */
 const menu = createMenu(menuItems);
