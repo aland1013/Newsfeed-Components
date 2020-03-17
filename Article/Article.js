@@ -85,6 +85,20 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  {
+    title: "I'm Not Alone",
+    date: 'June 1, 1987',
+    firstParagraph: `I see what I do, first look at the phone, turn on your TV. Unscrew a bottle of beer, an orange square of cellophane cheese. First I think of this, and then I turn to that, maybe I just don't think. Might sing to this, I might sing to that, if I could only sing.`,
+    secondParagraph: `Now, as you can see, this clearly isn't me. I'm not alone, I'm just blue. I'm not alone...`,
+    thirdParagraph: `There was a day when I was alone, a few sane days ago. There was a love I've been living with that I lost on the way home. First I thought of this, and then I turn to that, and then I turn a little bit scared. Well, I feel a little bit easier knowing that you're here.`
+  },
+  {
+    title: 'Althea',
+    date: 'August 4, 1979',
+    firstParagraph: `I told Althea I was feeling lost, lacking in some direction. Althea told me, upon scrutiny, that my back might need protection. I told Althea that treachery was tearing me limb from limb. Althea told me, "Now, cool down boy. Settle back. Easy, Jim."`,
+    secondParagraph: `You may be Saturday's child all grown, moving with a pinch of grace. You may be a clown in the burying ground, or just another pretty face. You may be the fate of Ophelia, sleeping and perchance to dream. Honest to the point of recklessness, self-centered to the extreme.`,
+    thirdParagraph: `Ain't nobody messing with you but you. Your friends are getting most concerned. Loose with the truth, maybe it's your fire. But baby...don't get burned. "When the smoke has cleared," she said. That's what she said to me. You're going to want a bed to lay your head, and a little sympathy. There are things you can replace, and others you cannot. The time has come to weigh those things. This space is getting hot. You know this space is getting hot.`
   }
 ];
 
